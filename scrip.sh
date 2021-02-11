@@ -1,1 +1,0 @@
-docker run -d --restart on-failure -v /var/run/docker.sock:/var/run/docker.sock -v  `pwd`:/usr/local/qualys/qpa/data  -e ACTIVATIONID=$AI -e CUSTOMERID=$CI -e POD_URL=$PODURL --net=host --name qualys-container-sensor qualys/sensor:latest --log-level=5
